@@ -43,6 +43,7 @@ public class crackmain implements IXposedHookLoadPackage {
                 protected void afterHookedMethod(MethodHookParam param) throws Throwable {
                     lpparam = loadPackageParam;
                     crackRootAndROMCheck();
+                    getInfo();
                 }
             });
         }
