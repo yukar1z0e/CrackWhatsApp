@@ -183,9 +183,9 @@ function test(targetClass) {
 setTimeout(function () {
     Java.perform(function () {
         console.log("first entering selector");
-        trace("com.whatsapp.contact");
+        trace("com.whatsapp.profile.ProfileInfoActivity");
     });
 }, 0);
 
 
-// frida -U -n com.whatsapp -l demo.js -o log/2.log
+// frida -U -n com.whatsapp -l demo.js -o log/12.log
