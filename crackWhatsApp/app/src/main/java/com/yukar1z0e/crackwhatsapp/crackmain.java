@@ -96,6 +96,5 @@ public class crackmain implements IXposedHookLoadPackage {
                 Log.d("crackWhatsApp", r_Object.toString());
             }
         });
-
     }
 }
