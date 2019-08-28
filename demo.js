@@ -184,9 +184,9 @@ setTimeout(function () {
     Java.perform(function () {
         console.log("first entering selector");
 
-        trace("com.whatsapp.profile");
+        trace("com.whatsapp.ContactInfo");
     });
 }, 0);
 
 
-// frida -U -n com.whatsapp -l demo.js -o log/13.log
+// frida -U -n com.whatsapp -l demo.js -o log/14.log

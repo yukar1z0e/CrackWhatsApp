@@ -42,14 +42,14 @@ public class crackmain implements IXposedHookLoadPackage {
                 @Override
                 protected void afterHookedMethod(MethodHookParam param) throws Throwable {
                     lpparam = loadPackageParam;
-                    crackRootAndROMTest();
+                    crackRootAndROMCheck();
                 }
             });
         }
     }
 
     //解决ROOT和ROM检测问题
-    public void crackRootAndROMTest(){
+    public void crackRootAndROMCheck() {
         final Class<?> aClass=findClass("d.g.fa.a",lpparam.classLoader);
         final Class<?> fClass=findClass("d.g.t.f",lpparam.classLoader);
         final Class<?> mClass=findClass("d.g.t.m",lpparam.classLoader);
@@ -74,5 +74,18 @@ public class crackmain implements IXposedHookLoadPackage {
                 param.setResult(false);
             }
         });
+    }
+
+    public void getInfo() {
+        final Class<?> ContactProviderClass = findClass("com.whatsapp.contact.ContactProvider", lpparam.classLoader);
+        final Class<?> CdClass = findClass("d.g.x.Cd", lpparam.classLoader);
+
+        findAndHookMethod(ContactProviderClass, "a", CdClass, new XC_MethodHook() {
+            @Override
+            protected void afterHookedMethod(MethodHookParam param) throws Throwable {
+                Log.d("crackWhatsApp", "I am in ");
+            }
+        });
+
     }
 }
