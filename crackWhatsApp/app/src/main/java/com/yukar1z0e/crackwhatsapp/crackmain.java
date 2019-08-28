@@ -85,6 +85,10 @@ public class crackmain implements IXposedHookLoadPackage {
             @Override
             protected void afterHookedMethod(MethodHookParam param) throws Throwable {
                 Log.d("crackWhatsApp", "I am in ");
+
+                Field r_Field = findField(CdClass, "r");
+                Object r_object = r_Field.get(param.thisObject);
+                Log.d("crackWhatsApp", "r_value: " + r_object.toString());
             }
         });
 
