@@ -78,17 +78,17 @@ public class crackmain implements IXposedHookLoadPackage {
     }
 
     public void getInfo() {
-        final Class<?> ContactProviderClass = findClass("com.whatsapp.contact.ContactProvider", lpparam.classLoader);
+        final Class<?> ContactInfo$bClass = findClass("com.whatsapp.ContactInfo$b", lpparam.classLoader);
         final Class<?> CdClass = findClass("d.g.x.Cd", lpparam.classLoader);
 
-        findAndHookMethod(ContactProviderClass, "onCreate", new XC_MethodHook() {
+        findAndHookMethod(ContactInfo$bClass, "getView", int.class, View.class, ViewGroup.class, new XC_MethodHook() {
             @Override
             protected void afterHookedMethod(MethodHookParam param) throws Throwable {
                 Log.d("crackWhatsApp", "I am in ");
 
-                Field r_Field = findField(CdClass, "r");
-                Object r_object = r_Field.get(param.thisObject);
-                Log.d("crackWhatsApp", "r_value: " + r_object.toString());
+//                Field r_Field = findField(CdClass, "r");
+//                Object r_object = r_Field.get(param.thisObject);
+//                Log.d("crackWhatsApp", "r_value: " + r_object.toString());
             }
         });
 
