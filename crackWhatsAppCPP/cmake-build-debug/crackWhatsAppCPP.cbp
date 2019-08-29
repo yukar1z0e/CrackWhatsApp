@@ -83,6 +83,9 @@
 		<Unit filename="C:/Users/yukar/Desktop/Code/MoblieSecurity/WhatsApp/crackWhatsAppCPP/main.cpp">
 			<Option target="crackWhatsAppCPP"/>
 		</Unit>
+		<Unit filename="C:/Users/yukar/Desktop/Code/MoblieSecurity/WhatsApp/crackWhatsAppCPP/main.h">
+			<Option target="crackWhatsAppCPP"/>
+		</Unit>
 		<Unit filename="C:/Users/yukar/Desktop/Code/MoblieSecurity/WhatsApp/crackWhatsAppCPP/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

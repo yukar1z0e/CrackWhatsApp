@@ -3,4 +3,4 @@ project(crackWhatsAppCPP)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(crackWhatsAppCPP main.cpp)
+add_executable(crackWhatsAppCPP main.cpp main.cpp main.h)
