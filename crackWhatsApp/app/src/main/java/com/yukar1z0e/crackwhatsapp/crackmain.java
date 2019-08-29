@@ -103,6 +103,7 @@ public class crackmain implements IXposedHookLoadPackage {
                 Field t_Field = findField(CdClass, "t");
                 Field p_Field = findField(CdClass, "p");
                 Field v_Field = findField(CdClass, "v");
+                Field w_Field = findField(CdClass, "w");
                 Field z_Field = findField(CdClass, "z");
 
                 Log.d("crackWhatsApp",
@@ -119,6 +120,7 @@ public class crackmain implements IXposedHookLoadPackage {
                                 + " ;company: " + s_Field.get(ContactInfo$d_b_Object)
                                 + " ;title: " + t_Field.get(ContactInfo$d_b_Object)
                                 + " ;v: " + v_Field.get(ContactInfo$d_b_Object)
+                                + " ;Locale: " + w_Field.get(ContactInfo$d_b_Object)
                                 + " ;z: " + z_Field.get(ContactInfo$d_b_Object)
                 );
             }
