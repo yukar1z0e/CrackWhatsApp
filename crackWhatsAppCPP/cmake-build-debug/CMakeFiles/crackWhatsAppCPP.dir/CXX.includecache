@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/yukar/Desktop/Code/MoblieSecurity/WhatsApp/crackWhatsAppCPP/main.cpp
+iostream
+-
+windows.h
+-
+
